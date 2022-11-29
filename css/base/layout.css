@@ -5,24 +5,24 @@
 }
 
 .container > .row {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px 0;
     width: 1000px;
     margin-left: calc(50% - 500px);
 }
 
 .container > .short-row {
-    display: inline-block;
     width: 600px;
     margin-left: calc(50% - 300px);
 }
 
 .container > .row > .left {
     width: 50%;
-    float: left;
 }
 .container > .row > .right {
     width: 40%;
-    float: right;
 }
 
 @media (max-width: 1100px) {
@@ -44,6 +44,7 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .container > .row,
     .container > .short-row {
         width: 100%;
@@ -51,7 +52,6 @@
     }
     .container > .row > .left {
         width: 100%;
-        margin-bottom: 60px;
     }
     .container > .row > .right {
         width: 100%;
