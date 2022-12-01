@@ -1,3 +1,8 @@
+:root {
+    --main-color: #03a9f4;
+    --secondary-color: #ea1e63;
+}
+
 body,
 body * {
     margin: 0;
@@ -12,5 +17,5 @@ body {
 }
 
 .bg-blue {
-    background-color: #36f;
+    background-color: var(--main-color);
 }
